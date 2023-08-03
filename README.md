@@ -1,5 +1,7 @@
 <h1 align="center">Monochrome Rice</h1>
 
+<image src="screenshot.png">
+
 | ***author*** | [gxrcondeau](https://github.com/gxrconedau) |
 | :------------- | :-------------------------- |
 | ***wm*** | [hyprland](https://github.com/baskerville/bspwm) |
