@@ -1,4 +1,4 @@
-<h1 align="center">Monochrome Rice</h1>
+<h1 align="center">My first Monochrome Rice</h1>
 
 <image src="screenshot.png">
 
@@ -13,4 +13,4 @@
 | ***fetch*** | [neofetch](https://github.com/p3nguin-kun/lmaofetch) |
 
 ### additional packages:
-`cava icat slurp grim pil udiskie`
+`cava icat slurp grim pil udiskie mopidy mopidy-spotify`
