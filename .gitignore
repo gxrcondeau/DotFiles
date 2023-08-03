@@ -1,6 +1,7 @@
-Code/
-chromium/
-dconf/
-systemd/
-yay/
-mpd/
+Config/Code/
+Config/chromium/
+Config/dconf/
+Config/systemd/
+Config/yay/
+Config/mpd/
+Config/solaar/
