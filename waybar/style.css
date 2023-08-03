@@ -1,6 +1,6 @@
 *{
 	font-family: "JetBrainsMono Nerd Font";
-	font-weight: bold;
+	font-weight: 400;
 	border-radius: 0;
 	border: none;
 	background: #000000;
@@ -20,17 +20,17 @@
 	color: #ffffff;
 }
 
-#clock {
+#window {
 	color: #ffffff;
 }
 
 #pulseaudio {
-	margin-left: 16px;
-	margin-right: 8px;
+	margin-right: 24px;
 	color: #ffffff;
 }
 
-#pulseaudio.microphone {
-	margin-left: 8px;
+#clock
+{
 	margin-right: 16px;
+	color: #ffffff;
 }

@@ -7,8 +7,11 @@
 
 	// modules
 	"modules-left":["wlr/workspaces"],
-	"modules-center":["clock"],
-	"modules-right":["pulseaudio", "pulseaudio#microphone", "cpu", "memory"],
+	"modules-center":["hyprland/window"],
+	"modules-right":[
+		"pulseaudio", 
+		"clock"
+	],
 
 	"wlr/workspaces": {
 		"format": "{icon}",
@@ -23,13 +26,21 @@
 		}
 	},
 
+	"hyprland/window": {
+		"format": "{}",
+		"max-length": 30,
+		"rewrite": {
+			"(.*) - Chromium": "Chromium | $1",
+			"(.*) - Visual Studio Code": "VSCode | $1"
+			}
+	},
 
 	"clock": {
-		"format": "{:%H:%M}",
+		"format": "{:%H:%M}"
 	},
 
 	"pulseaudio": {
-        		"format": "{icon} {volume}%",
+        		"format": "vol: {volume}%",
         		"format-muted": "",
         		"on-click": "~/.config/waybar/scripts/volume --toggle",
 	        	"on-click-right": "pavucontrol",
