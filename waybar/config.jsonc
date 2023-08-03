@@ -1,0 +1,64 @@
+{
+	"layer": "top",
+	"position": "top",
+	"exclusive": true,
+	"passthrough": false,
+	"height": 40,
+
+	// modules
+	"modules-left":["wlr/workspaces"],
+	"modules-center":["clock"],
+	"modules-right":["pulseaudio", "pulseaudio#microphone", "cpu", "memory"],
+
+	"wlr/workspaces": {
+		"format": "{icon}",
+		"on-scroll-up": "hyprctl dispatch workspace e+1",
+		"on-scroll-down": "hyprctl dispatch workspace e-1",
+		"format-icons": {
+			"1": "一",
+			"2": "二",
+			"3": "三",
+			"4": "四",
+			"5": "五"
+		}
+	},
+
+
+	"clock": {
+		"format": "{:%H:%M}",
+	},
+
+	"pulseaudio": {
+        		"format": "{icon} {volume}%",
+        		"format-muted": "",
+        		"on-click": "~/.config/waybar/scripts/volume --toggle",
+	        	"on-click-right": "pavucontrol",
+        		"on-scroll-up": "~/.config/waybar/scripts/volume --inc",
+	        	"on-scroll-down": "~/.config/waybar/scripts/volume --dec",
+	        	"scroll-step": 5,
+        		"format-icons": {
+        		"headphone": "",
+	            	"hands-free": "",
+        	    	"headset": "",
+            		"phone": "",
+	       	     	"portable": "",
+        	    	"car": "",
+            		"default": ["", "", ""]
+        		},
+		"tooltip": true,
+        	"tooltip-format": "{icon}   at {volume}%"
+    	},
+
+    	"pulseaudio#microphone": {
+    		"format": "{format_source} {volume}%",
+        	"format-source": "",
+        	"format-source-muted": "",
+        	"on-click": "~/.config/HyprV/waybar/scripts/volume --toggle-mic",
+        	"on-click-right": "pavucontrol",
+        	"on-scroll-up": "~/.config/waybar/scripts/volume --mic-inc",
+        	"on-scroll-down": "~/.config/waybar/scripts/volume --mic-dec",
+        	"scroll-step": 5,
+        	"tooltip": true,
+        	"tooltip-format": "  at {volume}%"
+	},
+}

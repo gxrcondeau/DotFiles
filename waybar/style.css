@@ -1,0 +1,36 @@
+*{
+	font-family: "JetBrainsMono Nerd Font";
+	font-weight: bold;
+	border-radius: 0;
+	border: none;
+	background: #000000;
+}
+
+#workspaces button{
+	font-size: 14px;
+	color: #888888;
+}
+
+#workspaces button.active {
+	color: #ffffff;
+	border: 2px solid #555555;
+}
+
+#workspaces button:hover {
+	color: #ffffff;
+}
+
+#clock {
+	color: #ffffff;
+}
+
+#pulseaudio {
+	margin-left: 16px;
+	margin-right: 8px;
+	color: #ffffff;
+}
+
+#pulseaudio.microphone {
+	margin-left: 8px;
+	margin-right: 16px;
+}
